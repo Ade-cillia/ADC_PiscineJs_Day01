@@ -8,14 +8,15 @@ function runLengthEncoding(string) {
             nbLetter=1;
         }
         if (nbLetter==9 || !string[i+1] || string[i] != string[i+1]) {
-            encodedString+= (nbLetter==1)?string[i]:nbLetter+string[i]
+            //encodedString+= (nbLetter==1)?string[i]:nbLetter+string[i]
+            encodedString+= nbLetter+string[i]
             nbLetter=0;
         }
     }
     return encodedString;
 }
 
-const string = "AAAAYAAAAAAAAABBCCCCDDY"
+const string = "AAAAYAAaAAAAAABBCCCCDDY"
 console.log(runLengthEncoding(string))
 
 exports.runLengthEncoding = runLengthEncoding;
