@@ -23,10 +23,8 @@ function validIPAdresses(string) {
     return ipArr
 }
 
-const string = '1921680';
-
-console.log(string.substring(1))
-console.log(validIPAdresses(string));
+//const string = '1921680';
+//console.log(validIPAdresses(string));
 
 // Merci de ne pas effacer la ligne en dessous.
 exports.validIPAddresses = validIPAdresses;
